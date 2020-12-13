@@ -20,3 +20,7 @@ Quick Code Tour
 - **index.html** loads Bootstrap's CSS in the &lt;head&gt; tag and **renderer.js** after the closing &lt;body&gt; tag. On the web Bootstrap's JavaScript would also load in this location but the Electron way is to load it in **renderer.js** with a require().
 - **renderer.js** loads Cheerio, jQuery, Bootstrap and it's dependency; Tether. Each of the last three are assigned to the window object because this is the web application custom. It's not the Node.js or Electron custom because window is a global. For now we must do it this way or it won't work.
 - The HTML is composed in **renderer.js** by reading each snippet into a variable using fs.readFileSync() and then piecing the DOM together using Cheerio's jQuery-like features.
+
+Project Status
+--------------
+This project has been archived and is no longer being maintained by the author.
